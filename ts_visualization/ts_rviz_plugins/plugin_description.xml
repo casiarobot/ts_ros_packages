@@ -1,0 +1,7 @@
+<library path="lib/libts_rviz_plugins">
+  <class name="ts_rviz_plugins/PoseArrayWithWeight" type="ts_rviz_plugins::PoseArrayWithWeight" base_class_type="rviz::Display">
+    <description>
+      Displays for ts_msgs/PoseArrayWithWeight message
+    </description>
+  </class>
+</library>

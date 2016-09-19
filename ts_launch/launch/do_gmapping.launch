@@ -1,0 +1,8 @@
+<!--test for urg mapping-->
+<launch>
+	<param name="use_sim_time" value="true" />
+	<node pkg="rosbag" type="play" name="rosbag" args="--clock $(arg bagfile)"  />
+	<node pkg="gmapping" type="slam_gmapping" name="gmapping" />
+	<node pkg="ts_wp_generator" type="ts_wp_generator" name="ts_wp_generator" />
+	<node pkg="rviz" type="rviz" name="rviz" />
+</launch>
